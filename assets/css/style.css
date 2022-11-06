@@ -12,7 +12,7 @@ body{
   background-color: #121214;
   background-image: url(/assets/img/background.svg);
   background-position-x: center;
-  background-position-y: 55.6%;
+  background-position-y: -175px;
 }
 
 body *{
@@ -26,6 +26,7 @@ body *{
 
 header{
   margin-bottom: 63px;
+  text-align: center;
 }
 
 .card{
@@ -34,6 +35,12 @@ header{
   background: #1d1c19;
   border-bottom: 2px solid #f7dd43;
   border-radius: 6px;
+}
+
+#cards{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .card h2{
