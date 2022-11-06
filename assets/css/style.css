@@ -1,58 +1,57 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root{
+:root {
   --card-title-border-color: #746615;
-  --card-color-primary : #f7dd43;
-  --card-bg-color: #1d1c19; 
-  --bg: url(/assets/img/bgs/bgYellow.svg);
+  --card-color-primary: #f7dd43;
+  --card-bg-color: #1d1c19;
+  --bg: url(assets/img/bgs/bgYellow.svg);
 }
 
-body.blue{
+body.blue {
   --card-title-border-color: #338af3;
-  --card-color-primary : #338af3;
-  --card-bg-color: #202024; 
-  --bg: url(/assets/img/bgs/bgBlue.svg);
+  --card-color-primary: #338af3;
+  --card-bg-color: #202024;
+  --bg: url(assets/img/bgs/bgBlue.svg);
 }
 
-body.green{
+body.green {
   --card-title-border-color: #047c3f;
-  --card-color-primary : #047c3f;
-  --card-bg-color: #1a1f1b; 
-  --bg: url(/assets/img/bgs/bgGreen.svg);
+  --card-color-primary: #047c3f;
+  --card-bg-color: #1a1f1b;
+  --bg: url(assets/img/bgs/bgGreen.svg);
 }
 
-ul{
+ul {
   list-style: none;
 }
 
-body{
+body {
   background-color: #121214;
-  background-image: var(--bg); 
+  background-image: var(--bg);
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
-body *{
-  font-family: 'Roboto', sans-serif;
+body * {
+  font-family: "Roboto", sans-serif;
 }
 
-#app{
+#app {
   width: fit-content;
-  margin: 52px auto ;
+  margin: 52px auto;
 }
 
-header{
+header {
   margin-bottom: 63px;
   text-align: center;
 }
 
-.card{
+.card {
   padding: 32px 23px;
   text-align: center;
   background: var(--card-bg-color);
@@ -60,70 +59,70 @@ header{
   border-radius: 6px;
 }
 
-#cards{
+#cards {
   display: flex;
   flex-direction: column;
   gap: 32px;
 }
 
-.card h2{
+.card h2 {
   display: flex;
   gap: 16px;
   justify-content: center;
   align-items: center;
   padding: 8px 16px;
-  border: 1px solid var(--card-title-border-color); 
+  border: 1px solid var(--card-title-border-color);
   border-radius: 6px;
   width: fit-content;
   margin-inline: auto;
   margin-bottom: 53px;
-  color: #f7dd43; 
+  color: #f7dd43;
 }
 
-.card h2 span{
-  color: #E1E1E6;
+.card h2 span {
+  color: #e1e1e6;
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.card ul{
+.card ul {
   display: flex;
   flex-direction: column;
   gap: 24px;
   width: 270px;
 }
 
-.card ul li{
+.card ul li {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.card ul li + li{
+.card ul li + li {
   padding-top: 24px;
   border-top: 1px solid #323238;
 }
 
-.card ul li strong{
+.card ul li strong {
   font-weight: 900;
   font-size: 36px;
   line-height: 125%;
-  color: #E1E1E6;
+  color: #e1e1e6;
 }
 
 .card h2:hover,
 .card ul li strong:hover,
-.card ul li img:hover{
+.card ul li img:hover {
   transform: scale(1.1);
 }
 
 .card h2,
 .card ul li strong,
-.card ul li img{
+.card ul li img {
   transition: transform 0.3s;
 }
 
-.card{
+.card {
   opacity: 0;
   animation: appear 0.7s forwards;
 }
@@ -138,8 +137,8 @@ header{
   }
 }
 
-@media (min-width: 700px){
-  #cards{
+@media (min-width: 700px) {
+  #cards {
     max-width: 670px;
     flex-direction: row;
     flex-wrap: wrap;
