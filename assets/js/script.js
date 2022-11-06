@@ -1,10 +1,10 @@
 function game(play1, hour, play2) {
   return `
-            <li>
-              <img src="assets/img/icons/${play1}.svg" alt="${play1}" />
-              <strong>${hour}</strong>
-              <img src="assets/img/icons/${play2}.svg" alt="${play2}" />
-            </li>
+    <li>
+      <img src="assets/img/icons/${play1}.svg" alt="${play1}" />
+      <strong>${hour}</strong>
+      <img src="assets/img/icons/${play2}.svg" alt="${play2}" />
+    </li>
   `
 }
 
@@ -12,12 +12,12 @@ let delay = -0.3
 function createCard(date, day, game) {
   delay += +0.3
   return `
-        <div class="card" style="animation-delay: ${delay}s">
-          <h2>${date} <span>${day}</span></h2>
-          <ul>
-            ${game}
-          </ul>
-        </div>
+    <div class="card" style="animation-delay: ${delay}s">
+      <h2>${date} <span>${day}</span></h2>
+      <ul>
+        ${game}
+      </ul>
+    </div>
   `
 }
 
